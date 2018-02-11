@@ -1,0 +1,13 @@
+function [g, H] = annexeD(num_quad)
+
+    switch num_quad 
+        case 4 
+            g = [0 ; 0];
+            H = [-2 0 ; 0 10];
+        case 5
+            g = [2 ; 3];
+            H = [4 6 ; 6 5];
+        case 6
+            g = [2 ; 0];
+            H = [4 0 ; 0 -15];
+    end
